@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> 
+    <title>El Sagrado Secreto De Gaudí</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="homepage.html"><img src="images/ESSDG_Logo.png" alt="Logo" class="logo-img"></a></div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <label for="toggle"></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner">
+        <h1>El Sagrado Secreto De Gaudí</h1>
+            <button class="banner-left-arrow">
+                <img src="images/arrow-left-black.png" alt="Left Arrow">
+            </button>
+            <button class="banner-right-arrow">
+                <img src="images/arrow-right-black.png" alt="Right Arrow">
+            </button>
+        </div>
+        <div id="banner-left">
+            <img src="images/architecture.png" alt="Sagrada Familia aquarell image representing architectural view" id="left-image">        
+        </div>
+        <div id="banner-right">
+            <img src="images/timeline.png" alt="Sagrada Familia line image representing timeline of consruction" id="right-image">
+        </div>
+    </section>
+    
+    
+
+    <div class="filler2"></div>
+    
+
+    <!-- Other sections for homepage -->
+
+         <!-- Section innteractive timeline homepage -->
+         <section class="section2">
+            <div class="image-text-section">
+                <div class="image-wrapper-left">
+                    <img src="images/timeline.png" alt="interactive timeline image">
+                </div>
+                <div class="text-wrapper-right">
+                    <h2>Interactive Timeline</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit assumenda alias sapiente excepturi non! Itaque sit laborum ipsa iste obcaecati fugit, dolores perspiciatis facilis corporis voluptatem, dolor iusto quibusdam?</p>
+                    <button class="button-dark" onclick="redirectToPage('timeline.html')">Button</button>
+                </div>
+            </div>
+        </section>
+    
+            <!-- Section architectural view homepage -->
+        <section class="section1">
+            <div class="image-text-section">
+                <div class="image-wrapper-right">
+                    <img src="images/architecture.png" alt="architectural view image">
+                </div>
+                <div class="text-wrapper-left">
+                    <h2>Architectural View</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis asperiores quo molestias accusantium amet sit consequuntur fugit aliquam, at, laboriosam expedita distinctio nesciunt velit! Voluptates perspiciatis iste tempore nobis culpa?</p>
+                    <button class="button-dark" onclick="redirectToPage('architecture.html')">Button</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section about us homepage -->
+    <div class="line-divider"></div>
+        <section class="section1">
+        <h2>About Us</h2>
+        <div class="text-section-3-blocks">
+            <div class="three-blocks-text-block-gray">
+                <h3>Our vision</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo eius quas aut alias mollitia expedita, at architecto commodi voluptatibus magnam tempora tempore consequatur dicta error fugiat sequi amet quasi?</p>
+                <button class="button-dark" onclick="location.href='about.html#our-vision'">Button</button>
+            </div>
+            <div class="three-blocks-text-block-gray">
+                <h3>What we do</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo eius quas aut alias mollitia expedita, at architecto commodi voluptatibus magnam tempora tempore consequatur dicta error fugiat sequi amet quasi?</p>
+                <button class="button-dark" onclick="location.href='about.html#timeline_project'">Button</button>
+            </div>
+            <div class="three-blocks-text-block-gray">
+                <h3>Who we are</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta explicabo eius quas aut alias mollitia expedita, at architecto commodi voluptatibus magnam tempora tempore consequatur dicta error fugiat sequi amet quasi?</p>
+                <button class="button-dark" onclick="location.href='about.html#banner_about'">Button</button>
+            </div>
+        </div>
+    </section>
+    <div class="filler"></div>
+    <div class="line-divider"></div>
+
+
+
+        <!-- Section donations homepage -->
+    <section class="section1">
+        <div class="title-text-row">
+            <h2>Help Gaudí's to finalize his secret</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus quibusdam perferendis voluptatum voluptas in id corporis ipsa, tempora rem recusandae? Odio, quae delectus officia labore rem asperiores saepe incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rem quo minima odio eius quod, est sit sint magnam tenetur facere dolorum et voluptas? Tempore sed laudantium aspernatur odio reprehenderit?</p>
+            <div class="button-container">
+                <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Donate</button>
+                <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Tickets</button>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- Section reviews homepage -->
+    <section class="section2" id="slideshow-section">
+        <h2>What visitors think</h2>
+        <span>Check out what our visitors think</span>
+        <div class="slideshow-container">
+            <button class="arrow previous" onclick="prevReview()">&#10094;</button>
+                <div class="review-slider">
+
+                    <!-- Review 1 -->
+                    <div class="review-slide">
+                        <div class="review">
+                            <div class="reviewer-photo">
+                                <img src="images/ESSDG_Logo.png" alt="Reviewer Photo">
+                            </div>     
+                            <div class="review-text">          
+                                <span>Name, Date</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure eum voluptatibus cum harum quis recusandae enim quisquam ea, vel impedit veritatis ad molestias numquam odit eos corporis molestiae? Voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-slide">
+                        <div class="review">
+                            <div class="reviewer-photo">
+                                <img src="images/architecture.png" alt="Reviewer Photo">
+                            </div>                
+                            <div class="review-text">          
+                                <span>Name, Date</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure eum voluptatibus cum harum quis recusandae enim quisquam ea, vel impedit veritatis ad molestias numquam odit eos corporis molestiae? Voluptatum.</p>
+                            </div>                        </div>
+                    </div>
+                
+                    <!-- Review 3 -->
+                    <div class="review-slide">
+                        <div class="review">
+                            <div class="reviewer-photo">
+                                <img src="images/timeline.png" alt="Reviewer Photo">
+                            </div>                
+                            <div class="review-text">          
+                                <span>Name, Date</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure eum voluptatibus cum harum quis recusandae enim quisquam ea, vel impedit veritatis ad molestias numquam odit eos corporis molestiae? Voluptatum.</p>
+                            </div>                        </div>
+                    </div>
+
+                </div>
+            <button class="arrow next" onclick="nextReview()">&#10095;</button>
+        </div>
+
+    </section>
+
+        <!-- Section contact homepage -->
+    <section class="section1">
+        <div class="title-text-row">
+            <h2>Contact us</h2>
+            <form id="contact-form" action="submit.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h2>Footer</h2>
+        <div class="footer-grid">
+            <div class="text-block-footer" id="block1">
+                <h3>Disclaimer</h3>
+                <p>&copy; 2024 El Sagrado Secreto de Gaudí. This website was made with love and passion.</p>
+            </div>
+            <div class="text-block-footer" id="block2">
+                <h3>Our pages</h3>
+                <ul>
+                    <li><a href="homepage.html">Home<span></span></a></li>
+                    <li><a href="architecture.html">Architecture<span></span></a></li>
+                    <li><a href="timeline.html">Timeline<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="contact.html">Contact<span></span></a></li>
+                    <li><a href="terms.html">Terms and Conditions<span></span></a></li>
+                </ul>
+            </div>
+            <div class="text-block-footer" id="block3">
+                <h3>Social media</h3>
+                <a class="socialmedia" href="https://twitter.com/sagradafamilia/status/1185124497470439426" target="_blank">
+                    <img src="images/x.png" alt="X Logo with Link to x"></a>
+                <a class="socialmedia" href="https://www.instagram.com/basilicasagradafamilia/" target="_blank">
+                    <img src="images/ig.png" alt="Instagram Logo with Link to Instagram"></a>
+                <a class="socialmedia" href="https://www.facebook.com/BasilicadelaSagradaFamilia/" target="_blank">
+                    <img src="images/facebook.png" alt="facebook Logo with Link to facebook"></a>
+                <div class="button-container">
+                    <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Donate</button>
+                    <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Tickets</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

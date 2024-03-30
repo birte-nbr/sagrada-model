@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> 
+    <title>El Sagrado Secreto De Gaudí</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="homepage.html"><img src="images/ESSDG_Logo.png" alt="Logo" class="logo-img"></a></div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <label for="toggle"></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </button>
+        </nav>
+    </header>
+
+
+
+    <!-- Banner -->
+
+    <section class="banner">
+        <img src="images/timeline.png" alt="Sagrada Familia aquarell image representing architectural view">
+        <h1>Interactive Timeline</h1>
+        <span>Historical View of Construction</span>
+    </section>
+
+    <section class="filler"></section>
+
+
+
+    <!-- Other sections for homepage -->
+    <section id="section-timeline">
+        <h2>Interactive Timeline of Construction</h2>
+        <span>Please explain what to do and how it works</span>
+        <div class="timeline-container">
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+            &#10094;
+          </button>
+          <ul class="image-list">
+            <img class="image-item" src="images/Birte.png" alt="img-1" />
+            <img class="image-item" src="images/Augus.png" alt="img-2" />
+            <img class="image-item" src="images/Goda.png" alt="img-3" />
+            <img class="image-item" src="images/Nimish.png" alt="img-4" />
+            <img class="image-item" src="images/Marina.png" alt="img-5" />
+            <img class="image-item" src="images/Birte.png" alt="img-6" />
+            <img class="image-item" src="images/Nimish.png" alt="img-7" />
+            <img class="image-item" src="images/Marina.png" alt="img-8" />
+            <img class="image-item" src="images/Goda.png" alt="img-9" />
+            <img class="image-item" src="images/Augus.png" alt="img-10" />
+          </ul>
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            &#10095;
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section">
+        <!-- Section content -->
+    </section>
+    <!-- Add more sections as needed -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <h2>Footer</h2>
+        <div class="footer-grid">
+            <div class="text-block-footer" id="block1">
+                <h3>Disclaimer</h3>
+                <p>&copy; 2024 El Sagrado Secreto de Gaudí. This website was made with love and passion.</p>
+            </div>
+            <div class="text-block-footer" id="block2">
+                <h3>Our pages</h3>
+                <ul>
+                    <li><a href="homepage.html">Home<span></span></a></li>
+                    <li><a href="architecture.html">Architecture<span></span></a></li>
+                    <li><a href="timeline.html">Timeline<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="contact.html">Contact<span></span></a></li>
+                    <li><a href="terms.html">Terms and Conditions<span></span></a></li>
+                </ul>
+            </div>
+            <div class="text-block-footer" id="block3">
+                <h3>Social media</h3>
+                <a class="socialmedia" href="https://twitter.com/sagradafamilia/status/1185124497470439426" target="_blank">
+                    <img src="images/x.png" alt="X Logo with Link to x"></a>
+                <a class="socialmedia" href="https://www.instagram.com/basilicasagradafamilia/" target="_blank">
+                    <img src="images/ig.png" alt="Instagram Logo with Link to Instagram"></a>
+                <a class="socialmedia" href="https://www.facebook.com/BasilicadelaSagradaFamilia/" target="_blank">
+                    <img src="images/facebook.png" alt="facebook Logo with Link to facebook"></a>
+                <div class="button-container">
+                    <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Donate</button>
+                    <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Tickets</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

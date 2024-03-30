@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> 
+    <title>El Sagrado Secreto De Gaudí</title>
+</head>
+
+<body>
+    <header> <!--aria-controls implementation-->
+        <nav class="navbar">
+            <div class="logo"><a href="homepage.html"><img src="images/ESSDG_Logo.png" alt="Logo" class="logo-img"></a></div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <div class="menu">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner_subpages">
+        <h1>Gaudí's Secrets</h1>
+        <span>Our Blog</span>
+        <img src="images/Secret.jpg">
+    </section>
+
+  
+  <!-- Choice between architectural view and timeline of construction -->
+  <section class="section1">
+      
+    <h2>Blog stuff choosing things</h2>
+    <p>choose what you think you wanna know</p>
+
+        <div class = "design-overview">
+          <!-- item ARCH VIEW -->
+          <div class = "blog-selection">
+            <div class = "blog-selection-img">
+              <a href="#blog-selection-architecture">
+                <img src="images/ThePassionFacade.png" alt="The Passion Facade">
+            </a>
+            <h3>Architectural View</h3>
+            </div>
+          </div>
+          <!-- end of ARCH VIEW item -->
+
+          <!-- item Timeline-->
+          <div class = "blog-selection">
+            <div class = "blog-selection-img">
+              <img src = "images/item-construction.jpeg" alt = "Sagrada Familia Inside Architecture">
+              <h3>Histrorical View</h3>
+            </div>
+          </div>
+          <!-- end of Timeline item -->
+          
+      </div>
+    
+  </section>
+
+
+  <!-- blog -->
+
+  <!-- construction history blog -->
+  <section class="section2">
+    
+    <h2>Latest Blog</h2>
+    <span>Read our detailed blog posts about Architectural Elements of the Sagrada Família</span>
+    <div class = "blog-content"  id="blog-selection-architecture">
+
+      <!-- item 1-->
+
+        <div class = "blog-item" id="Glory_Facade">
+          <div class = "blog-img">
+            <img src = "images/TheGloryFacade.png" alt = "The Glory Facade">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Glory Facade</h3>
+            <p>Short excerpt of the blog post</p>
+          </div>
+          <button data-popup-target="#modal1">Read More</button>
+            
+        </div>
+          
+        <div class="pop-up" id="modal1">
+          
+          <div class="pop-up-header">
+            <div class="pop-up-img">
+              <img src = "images/TheGloryFacade.png" alt = "The Glory Facade">
+            </div>   
+            <button data-close-button class="pop-up-close-button">&times;</button>
+          </div>
+          
+          <div class="pop-up-text">
+            <span>Date</span>
+            <h3>The Glory Facade</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis tempora nisi laborum at cupiditate fugit, eligendi quas fuga ea quis porro ex harum. Rem adipisci temporibus obcaecati alias.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!
+            </p>
+          </div>
+
+        </div>  
+
+        <div id="pop-up-overlay"></div>
+
+        <!-- end of item 1-->
+        
+        
+
+        <!-- item 2-->
+        <div class = "blog-item" id="Nativity_Facade">
+          <div class = "blog-img">
+            <img src = "images/TheNativityFacade.png" alt = "The Nativity Facade">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Nativity Facade</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+          </div>
+          <button data-popup-target="#modal2">Read More</button>
+            
+        </div>
+          
+        <div class="pop-up" id="modal2">
+          
+          <div class="pop-up-header">
+            <div class="pop-up-img">
+              <img src = "images/TheNativityFacade.png" alt = "The Nativity Facade">
+            </div>   
+            <button data-close-button class="pop-up-close-button">&times;</button>
+          </div>
+          
+          <div class="pop-up-text">
+            <span>Date</span>
+            <h3>The Nativity Facade</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis tempora nisi laborum at cupiditate fugit, eligendi quas fuga ea quis porro ex harum. Rem adipisci temporibus obcaecati alias.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas, <doloremque class="Lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!</doloremque>
+            </p>
+          </div>
+
+        </div>
+
+        <div id="pop-up-overlay"></div>
+
+        <!-- end of item 2-->
+
+
+        <!-- item 3-->
+
+        <div class = "blog-item" id="Passion_Facade">
+          <div class = "blog-img">
+            <img src = "images/ThePassionFacade.png" alt = "The Passion Facade">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Passion Facade</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+          </div>
+          <button data-popup-target="#modal3">Read More</button>
+            
+        </div>
+          
+        <div class="pop-up" id="modal3">
+          
+          <div class="pop-up-header">
+            <div class="pop-up-img">
+              <img src = "images/ThePassionFacade.png" alt = "The Passion Facade">
+            </div>   
+            <button data-close-button class="pop-up-close-button">&times;</button>
+          </div>
+          
+          <div class="pop-up-text">
+            <span>Date</span>
+            <h3>The Passion Facade</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis tempora nisi laborum at cupiditate fugit, eligendi quas fuga ea quis porro ex harum. Rem adipisci temporibus obcaecati alias.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas, <doloremque class="Lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!</doloremque>
+            </p>
+          </div>
+        </div>  
+
+        <div id="pop-up-overlay"></div>
+
+        <!-- end of item 3-->
+
+
+        <!-- item 4-->
+
+        <div class = "blog-item" id="Jesus_Tower">
+          <div class = "blog-img">
+            <img src = "images/TheJesusTower.png" alt = "The Jesus Tower">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Jesus Tower</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+          </div>
+        
+          <button data-popup-target="#modal4">Read More</button>
+            
+        </div>
+          
+        <div class="pop-up" id="modal4">
+          
+          <div class="pop-up-header">
+            <div class="pop-up-img">
+              <img src = "images/TheJesusTower.png" alt = "The Jesus Tower">
+            </div>   
+            <button data-close-button class="pop-up-close-button">&times;</button>
+          </div>
+          
+          <div class="pop-up-text">
+            <span>Date</span>
+            <h3>The Jesus Tower</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis tempora nisi laborum at cupiditate fugit, eligendi quas fuga ea quis porro ex harum. Rem adipisci temporibus obcaecati alias.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas, <doloremque class="Lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!</doloremque>
+            </p>
+          </div>
+        </div>  
+
+        <div id="pop-up-overlay"></div>
+
+        <!-- end of item 4-->
+
+
+        
+        <!-- item 5-->
+        <div class = "blog-item" id="Virgin_Mary_Tower">
+          <div class = "blog-img">
+            <img src = "images/TheVirginMaryTower.png" alt = "The Virgin Mary Tower">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Virgin Mary Tower</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+          </div>
+        
+          <button data-popup-target="#modal5">Read More</button>
+            
+        </div>
+          
+        <div class="pop-up" id="modal5">
+          
+          <div class="pop-up-header">
+            <div class="pop-up-img">
+              <img src = "images/TheVirginMaryTower.png" alt = "The Virgin Mary Tower">
+            </div>   
+            <button data-close-button class="pop-up-close-button">&times;</button>
+          </div>
+          
+          <div class="pop-up-text">
+            <span>Date</span>
+            <h3>The Virgin Mary Tower</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis tempora nisi laborum at cupiditate fugit, eligendi quas fuga ea quis porro ex harum. Rem adipisci temporibus obcaecati alias.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas, <doloremque class="Lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!</doloremque>
+            </p>
+          </div>
+        </div>  
+
+        <div id="pop-up-overlay"></div>
+
+        <!-- end of item 5-->
+        
+
+
+        <!-- item 6-->
+
+        <div class = "blog-item" id="Evangelist_Towers">
+          <div class = "blog-img">
+            <img src = "images/Theevangelisttowers.png" alt = "The Evangelist Towers">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Evangelist Tower</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+          </div>
+          <button data-popup-target="#modal6">Read More</button>
+            
+        </div>
+          
+        <div class="pop-up" id="modal6">
+          
+          <div class="pop-up-header">
+            <div class="pop-up-img">
+              <img src = "images/Theevangelisttowers.png" alt = "The Evangelist Tower">
+            </div>   
+            <button data-close-button class="pop-up-close-button">&times;</button>
+          </div>
+          
+          <div class="pop-up-text">
+            <span>Date</span>
+            <h3>The Evangelist Tower</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis tempora nisi laborum at cupiditate fugit, eligendi quas fuga ea quis porro ex harum. Rem adipisci temporibus obcaecati alias.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas, <doloremque class="Lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!</doloremque>
+            </p>
+          </div>
+        </div>  
+
+        <div id="pop-up-overlay"></div>
+
+        <!-- end of item 6-->
+
+
+
+        <!-- item 7-->
+
+        <div class = "blog-item" id="Crypt">
+          <div class = "blog-img">
+            <img src = "images/TheCrypt.png" alt = "The Crypt">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Crypt</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+          </div>
+          <button data-popup-target="#modal7">Read More</button>
+            
+        </div>
+          
+        <div class="pop-up" id="modal7">
+          
+          <div class="pop-up-header">
+            <div class="pop-up-img">
+              <img src = "images/TheCrypt.png" alt = "The Crypt">
+            </div>   
+            <button data-close-button class="pop-up-close-button">&times;</button>
+          </div>
+          
+          <div class="pop-up-text">
+            <span>Date</span>
+            <h3>The Crypt</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit blanditiis tempora nisi laborum at cupiditate fugit, eligendi quas fuga ea quis porro ex harum. Rem adipisci temporibus obcaecati alias.
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio nisi id. Aut laboriosam odit nisi, sed exercitationem facilis nostrum mollitia quae. Earum animi distinctio adipisci natus atque? Quas, <doloremque class="Lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam distinctio saepe quis ipsa explicabo veniam perspiciatis commodi corrupti magni dignissimos? Repellat nam amet iste fugiat ab quas praesentium nemo voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum similique, fugit, beatae vero officia laudantium incidunt dignissimos quaerat, asperiores iure aliquam ipsam. Corrupti laboriosam iure dicta ullam! Ab, placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quae ut labore! Dolorem, ab accusantium similique iusto officia sit et eligendi quia delectus, sapiente laborum. Dolore corrupti officiis sed consectetur!</doloremque>
+            </p>
+          </div>
+        </div>  
+
+        <div id="pop-up-overlay"></div>
+
+        <!-- end of item 7-->
+  
+      
+    </div>
+
+    <!-- historical and construction blog -->
+
+    
+    <h2>Latest Blog</h2>
+    <span>Read our detailed blog posts about the construction time and history of the Sagrada Família</span>
+    <div class = "blog-content"  id="blog-selection-timeline">
+
+      <!-- item 1-->
+        <div class = "blog-item" id="blog-timeline">
+          <div class = "blog-img">
+            <img src = "images/blog-p-1.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Glory Facade</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+            <a href = "#">Read More</a>
+          </div>
+        </div>
+        <!-- end of item 1-->
+
+        <!-- item 2-->
+        <div class = "blog-item" id="blog-timeline">
+          <div class = "blog-img">
+            <img src = "images/blog-p-2.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Nativity Facade</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+            <a href = "#">Read More</a>
+          </div>
+        </div>
+        <!-- end of item 2-->
+
+        <!-- item 3-->
+        <div class = "blog-item" id="blog-timeline">
+          <div class = "blog-img">
+            <img src = "images/blog-p-3.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Passion Facade</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+            <a href = "#">Read More</a>
+          </div>
+        </div>
+        <!-- end of item 3-->
+
+        <!-- item 4-->
+        <div class = "blog-item" id="blog-timeline">
+          <div class = "blog-img">
+            <img src = "images/blog-p-4.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Jesus Tower</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+            <a href = "#">Read More</a>
+          </div>
+        </div>
+        <!-- end of item 4-->
+
+        <!-- item 5-->
+        <div class = "blog-item" id="blog-timeline">
+          <div class = "blog-img">
+            <img src = "images/blog-p-5.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Virgin Mary Tower</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+            <a href = "#">Read More</a>
+          </div>
+        </div>
+        <!-- end of item 5-->
+        
+        <!-- item 6-->
+        <div class = "blog-item" id="blog-timeline">
+          <div class = "blog-img">
+            <img src = "images/blog-p-6.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Evangelist Tower</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+            <a href = "#">Read More</a>
+          </div>
+        </div>
+        <!-- end of item 6-->
+
+        <!-- item 7-->
+        <div class = "blog-item" id="blog-timeline">
+          <div class = "blog-img">
+            <img src = "images/blog-p-6.jpg" alt = "">
+          </div>
+          <div class = "blog-text">
+            <span>Date</span>
+            <h3>The Crypt</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+            <a href = "#">Read More</a>
+          </div>
+        </div>
+        <!-- end of item 7-->
+  
+    </div>
+  </section>
+  <!-- end of blog -->
+
+
+
+   <!-- Footer -->
+   <footer>
+    <h2>Footer</h2>
+    <div class="footer-grid">
+        <div class="text-block-footer" id="block1">
+            <h3>Disclaimer</h3>
+            <p>&copy; 2024 El Sagrado Secreto de Gaudí. This website was made with love and passion.</p>
+        </div>
+        <div class="text-block-footer" id="block2">
+            <h3>Our pages</h3>
+            <ul>
+                <li><a href="homepage.html">Home<span></span></a></li>
+                <li><a href="architecture.html">Architecture<span></span></a></li>
+                <li><a href="timeline.html">Timeline<span></span></a></li>
+                <li><a href="about.html">About Us<span></span></a></li>
+                <li><a href="contact.html">Contact<span></span></a></li>
+                <li><a href="terms.html">Terms and Conditions<span></span></a></li>
+            </ul>
+        </div>
+        <div class="text-block-footer" id="block3">
+            <h3>Social media</h3>
+            <a class="socialmedia" href="https://twitter.com/sagradafamilia/status/1185124497470439426" target="_blank">
+                <img src="images/x.png" alt="X Logo with Link to x"></a>
+            <a class="socialmedia" href="https://www.instagram.com/basilicasagradafamilia/" target="_blank">
+                <img src="images/ig.png" alt="Instagram Logo with Link to Instagram"></a>
+            <a class="socialmedia" href="https://www.facebook.com/BasilicadelaSagradaFamilia/" target="_blank">
+                <img src="images/facebook.png" alt="facebook Logo with Link to facebook"></a>
+            <div class="button-container">
+                <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Donate</button>
+                <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Tickets</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<body>
+    
+</body>
+</html>

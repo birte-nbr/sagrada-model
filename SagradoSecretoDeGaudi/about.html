@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="GSAP.js" defer></script>
+    <script src="script.js" defer></script> 
+        <!--Import GSAP 3 CDN. Check under https://cdnjs.com/libraries/gsap-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!--Import GSAP scroll trigger plug-in-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <title>El Sagrado Secreto De Gaudí</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="homepage.html"><img src="images/ESSDG_Logo.png" alt="Logo" class="logo-img"></a></div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <label for="toggle"></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="architecture.html">Architecture</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- Banner -->
+    <section class="banner_about" id="banner_about">
+
+        <h1>About Us</h1>
+
+        <div class="person" id="person1">
+            <img src="images/Goda.png" alt="Headshot Nimish">        
+        </div>
+        
+        <div class="person" id="person2">
+            <img src="images/Augus.png" alt="Headshot Birte">        
+        </div>
+
+        <div class="person" id="person3">
+            <img src="images/Birte.png" alt="Headshot Augus">      
+        </div>
+
+        <div class="person" id="person4">
+            <img src="images/Nimish.png" alt="Headshot Marina">        
+        </div>
+
+        <div class="person" id="person5">
+            <img src="images/Marina.png" alt="Headshot Goda">
+        </div>
+    </section>
+
+
+    <!-- Other sections for about us -->
+
+    <section class="section1" id="our-vision">
+        <div class="image-text-section">
+
+            <div class="image-wrapper-right">
+                <img src="images/vision.png" alt="image representing our vision">
+            </div>
+
+            <div class="text-wrapper-left">
+                <h2>Our Vision</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut numquam magni, saepe magnam recusandae at quibusdam perspiciatis voluptas iste placeat officiis, cupiditate, ea nobis doloribus fugiat voluptatem et quisquam voluptatibus?
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+<section class="section1" id="timeline_project">
+
+    <div class="timeline_project">
+        <h2>Our Project</h2>
+        <div class="container">
+            
+            <svg viewBox="0 0 1302 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!--Group of path and dots-->
+                <g>
+                    <path d="M9 18C13.9706 18 18 13.9706 18 9C18 4.0294 13.9706 0 9 0C4.0294 0 0 4.0294 0 9C0 13.9706 4.0294 18 9 18Z" fill="#D9D9D9"/>
+                    <path d="M330 18C334.971 18 339 13.9706 339 9C339 4.0294 334.971 0 330 0C325.029 0 321 4.0294 321 9C321 13.9706 325.029 18 330 18Z" fill="#D9D9D9"/>
+                    <path d="M651 18C655.971 18 660 13.9706 660 9C660 4.0294 655.971 0 651 0C646.029 0 642 4.0294 642 9C642 13.9706 646.029 18 651 18Z" fill="#D9D9D9"/>
+                    <path d="M972 18C976.971 18 981 13.9706 981 9C981 4.0294 976.971 0 972 0C967.029 0 963 4.0294 963 9C963 13.9706 967.029 18 972 18Z" fill="#D9D9D9"/>
+                    <path d="M1293 18C1297.97 18 1302 13.9706 1302 9C1302 4.0294 1297.97 0 1293 0C1288.03 0 1284 4.0294 1284 9C1284 13.9706 1288.03 18 1293 18Z" fill="#D9D9D9"/>
+                    <path d="M0 11V7H1301V11H0Z" fill="#D9D9D9"/>
+                </g>
+                <!--Masking Group of path and dots-->
+                <mask id="mask0_2_6" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1302" height="18">
+                    <g>
+                    <path d="M9 18C13.9706 18 18 13.9706 18 9C18 4.0294 13.9706 0 9 0C4.0294 0 0 4.0294 0 9C0 13.9706 4.0294 18 9 18Z" fill="#D9D9D9"/>
+                        <path d="M330 18C334.971 18 339 13.9706 339 9C339 4.0294 334.971 0 330 0C325.029 0 321 4.0294 321 9C321 13.9706 325.029 18 330 18Z" fill="#D9D9D9"/>
+                        <path d="M651 18C655.971 18 660 13.9706 660 9C660 4.0294 655.971 0 651 0C646.029 0 642 4.0294 642 9C642 13.9706 646.029 18 651 18Z" fill="#D9D9D9"/>
+                        <path d="M972 18C976.971 18 981 13.9706 981 9C981 4.0294 976.971 0 972 0C967.029 0 963 4.0294 963 9C963 13.9706 967.029 18 972 18Z" fill="#D9D9D9"/>
+                        <path d="M1293 18C1297.97 18 1302 13.9706 1302 9C1302 4.0294 1297.97 0 1293 0C1288.03 0 1284 4.0294 1284 9C1284 13.9706 1288.03 18 1293 18Z" fill="#D9D9D9"/>
+                        <path d="M0 11V7H1301V11H0Z" fill="#D9D9D9"/>
+                    </g>
+                </mask>
+
+                <!--Apply masking-->
+                <g mask="url(#mask0_2_6)">
+                    <rect class="mask" y="-49" height="99" fill="black"/>
+                </g>
+            </svg>
+                
+            
+            <section>
+                <span>Advanced</span>
+                <h3>Part 1</h3>
+
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                </div>
+            </section>
+            
+            <section>
+                <span class="anim">Advanced</span>
+                <h3 class="anim">Part 2</h3>
+
+                <div class="col anim">
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                </div>
+            </section>
+
+            <section>
+                <span class="anim">Advanced</span>
+                <h3 class="anim">Part 3</h3>
+
+                <div class="col anim">
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                </div>
+            </section>
+
+            <section>
+                <span class="anim">Advanced</span>
+                <h3 class="anim">Part 4</h3>
+
+                <div class="col anim">
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                </div>
+            </section>
+
+            <section>
+                <span class="anim">Advanced</span>
+                <h3 class="anim">Part 5</h3>
+
+                <div class="col anim">
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit sed massa turpis in. Sit praesent arcu leo lectus pellentesque. Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis risus amet urna. Urna egestas lorem.</p>
+                </div>
+            </section>
+        </div>
+        <button class="button-white" onclick="location.href='#banner_about'">^</button>
+    </div>
+        
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <h2>Footer</h2>
+        <div class="footer-grid">
+            <div class="text-block-footer" id="block1">
+                <h3>Disclaimer</h3>
+                <p>&copy; 2024 El Sagrado Secreto de Gaudí. This website was made with love and passion.</p>
+            </div>
+            <div class="text-block-footer" id="block2">
+                <h3>Our pages</h3>
+                <ul>
+                    <li><a href="homepage.html">Home<span></span></a></li>
+                    <li><a href="architecture.html">Architecture<span></span></a></li>
+                    <li><a href="timeline.html">Timeline<span></span></a></li>
+                    <li><a href="about.html">About Us<span></span></a></li>
+                    <li><a href="contact.html">Contact<span></span></a></li>
+                    <li><a href="terms.html">Terms and Conditions<span></span></a></li>
+                </ul>
+            </div>
+            <div class="text-block-footer" id="block3">
+                <h3>Social media</h3>
+                <a class="socialmedia" href="https://twitter.com/sagradafamilia/status/1185124497470439426" target="_blank">
+                    <img src="images/x.png" alt="X Logo with Link to x"></a>
+                <a class="socialmedia" href="https://www.instagram.com/basilicasagradafamilia/" target="_blank">
+                    <img src="images/ig.png" alt="Instagram Logo with Link to Instagram"></a>
+                <a class="socialmedia" href="https://www.facebook.com/BasilicadelaSagradaFamilia/" target="_blank">
+                    <img src="images/facebook.png" alt="facebook Logo with Link to facebook"></a>
+                <div class="button-container">
+                    <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Donate</button>
+                    <button class="button-dark" onclick="redirectToPage('https://giving.sagradafamilia.org/puntual?lang=en')">Tickets</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

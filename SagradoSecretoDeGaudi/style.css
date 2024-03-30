@@ -904,6 +904,7 @@ footer h2{
     }
 }
 
+
 .container {
     display: flex;
     width: 100%;
@@ -1383,6 +1384,10 @@ section {
 
 /* Birtes CSS for 3D model implementation */
 
+.section2 #section-model {
+    height: 100vh;
+}
+
 
 /* change color of bootstrap sliders */
 
@@ -1412,11 +1417,6 @@ section {
 }
 
 
-.anchor {
-    padding-top: 250px;
-    margin-top: -250px;
-}
-
 
 #lazy-load-poster {
 	grid-area: model-box;
@@ -1442,24 +1442,7 @@ section {
 	z-index: 201;
 }
 
-/* QMarina adjust this to correct percentages */
-@media (min-width: 576px) {
-    body {
-        padding-top: 150px;
-    }
-    .anchor {
-        padding-top: 150px;
-        margin-top: -150px;
-    }
-}
-@media (min-width: 768px) {
-    body {
-        padding-top: 100px;
-    }
-    .anchor {
-        padding-top: 100px; margin-top: -100px;
-    }
-}
+
 
 /* grid for toggle menus */
 
@@ -1500,9 +1483,6 @@ section {
     height: fit-content + 10%;
     
 }
-.options-container-box:hover {
-    transform: translateY(-8px);
-}
 
 
 .controls-container {
@@ -1518,24 +1498,24 @@ section {
 /* for model container */
 .container1 {
 	display: grid;
-	grid-template-columns: 1fr 3fr 2fr;
-	grid-template-rows: 500px;
-	grid-template-areas:
-	"navigation-aid model-box textbox-area";
+	grid-template-columns: 4fr 2fr;
+	grid-template-rows: 31.25rem 6.25rem;
+	 
 }
 
 /*elements of the grid */
 .navigation-aid {
-	grid-area: navigation-aid;
+	grid-column: 1;
+    grid-row: 2;
 }
 
 .model-box {
-	grid-area: model-box;
-	grid-column: span 2;  
+	grid-row: 1;
+	grid-column: 1;  
 }
 .textbox-area {
-	grid-area: textbox-area;
-	grid-column: span 1;
+	grid-row: 1;
+	grid-column: 2;
 	display: none;
 	position: relative;
 }
@@ -1637,9 +1617,16 @@ left: 5%;
 /* navigation side line */
 
 .navigation-aid svg {
-	position: absolute;
-	left: 10%;
+	
+	padding-top: 1.5625rem;
+    padding-left: 2%;
+    padding-right: 2%;
 }
+/* style points 
+.navigation-aid svg path {
+
+}
+*/
 circle {
 	fill:#70CBFF;
 }

@@ -629,7 +629,6 @@ span {
     margin-bottom: 20px;
 }
 
-/* @augus  */
 form label {
     display: block;
     margin-bottom: 5px;
@@ -904,7 +903,6 @@ footer h2{
     }
 }
 
-
 .container {
     display: flex;
     width: 100%;
@@ -996,6 +994,7 @@ section {
             width: 100%;
             height: 25em;
             overflow: hidden;
+            z-index: 1;
         }
 
         
@@ -1362,7 +1361,7 @@ section {
             bottom: -10px;
         }
 
-  /* Styles for mobile and tablets @Marina */
+  /* Styles for mobile and tablets */
   @media only screen and (max-width: 1023px) {
     .slider-wrapper .slide-button {
       display: none !important;
@@ -1382,11 +1381,14 @@ section {
   }
 
 
-/* Birtes CSS for 3D model implementation */
 
-.section2 #section-model {
-    height: 100vh;
-}
+/* Augus' css adjustments to 3D model*/
+
+
+
+
+
+/* Birtes CSS for 3D model implementation */
 
 
 /* change color of bootstrap sliders */
@@ -1442,9 +1444,22 @@ section {
 	z-index: 201;
 }
 
+/* Q Marina adjust this to correct percentages */
+@media (min-width: 576px) {
+    body {
+        padding-top: 0;
+    }
+
+}
+@media (min-width: 768px) {
+    body {
+        padding-top: 0; 
+    }
+
+}
 
 
-/* grid for toggle menus */
+/* grid for accessibility expander toggle menus */
 
 .container-menus {
 	display: grid;
@@ -1483,6 +1498,9 @@ section {
     height: fit-content + 10%;
     
 }
+.options-container-box:hover {
+    transform: translateY(-8px);
+}
 
 
 .controls-container {
@@ -1498,24 +1516,24 @@ section {
 /* for model container */
 .container1 {
 	display: grid;
-	grid-template-columns: 4fr 2fr;
-	grid-template-rows: 31.25rem 6.25rem;
-	 
+	grid-template-columns: 1fr 3fr 2fr;
+	grid-template-rows: 500px;
+	grid-template-areas:
+	"navigation-aid model-box textbox-area";
 }
 
 /*elements of the grid */
 .navigation-aid {
-	grid-column: 1;
-    grid-row: 2;
+	grid-area: navigation-aid;
 }
 
 .model-box {
-	grid-row: 1;
-	grid-column: 1;  
+	grid-area: model-box;
+	grid-column: span 2;  
 }
 .textbox-area {
-	grid-row: 1;
-	grid-column: 2;
+	grid-area: textbox-area;
+	grid-column: span 1;
 	display: none;
 	position: relative;
 }
@@ -1588,25 +1606,7 @@ left: 5%;
 	font-size: 20px;
   }
 
-  /* scrollbar textbox 3D model */
-/*
-  ::-webkit-scrollbar {
-	width: 10px;
-	height: 5%;
-  }
   
-  
-  ::-webkit-scrollbar-track {
-	background: none; 
-  }
-   
- 
-  ::-webkit-scrollbar-thumb {
-	background: #e7e0da;
-	border-radius: 0 8px 8px 0;
-  }
-
-  */
 /* hide last few lines before scrolling, doesn't work lol */
   .hidden-text {
 	color: blue !important;
@@ -1617,16 +1617,9 @@ left: 5%;
 /* navigation side line */
 
 .navigation-aid svg {
-	
-	padding-top: 1.5625rem;
-    padding-left: 2%;
-    padding-right: 2%;
+	position: absolute;
+	left: 10%;
 }
-/* style points 
-.navigation-aid svg path {
-
-}
-*/
 circle {
 	fill:#70CBFF;
 }
@@ -1681,6 +1674,6 @@ circle {
 }
 
 
-model-viewer:focus{
+model-viewer:focus-visible{
 	outline: 4px solid #9ec5fe;
 }
